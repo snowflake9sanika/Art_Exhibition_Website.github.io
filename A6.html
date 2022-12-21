@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+            <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+        </div> 
+            <div class="read">
+                <h1>~Nasreen Mohamedi~</h1>
+            <p>One of the most significant artists to emerge in post-Independence India, Nasreen Mohamedi (1937–1990) 
+                created a body of work that demonstrates a singular and sustained engagement with abstraction. 
+                Her minimalist practice not only adds a rich layer to the history of South Asian art but also 
+                necessitates an expansion of the narratives of international modernism. The Met Breuer exhibition,
+                 the first museum retrospective of the artist's work in the United States, is 
+                an important part of the Met's initiative to explore and present the global scope of modern and contemporary art.
+                <span id="points">...</span>
+                <span id="moreText">Mohamedi mainly worked with gestures of pencil and ink on paper, experimenting with 
+                    organic forms, delicate grids, and dynamic, hard-edged lines. Her cosmopolitan outlook enabled her
+                     to draw upon a range of aesthetic sensibilities, from the poetry of 
+                    Rilke and Camus, as well as Indian classical music, to the modernist architecture of Le Corbusier's Chandigarh.
+                </span>
+            </p>
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div>
+            <div class="volcano">
+                <img class="imgs" src="nasreen.jpg"></img>
+        </div>
+                </div>
+        </div>
+        <script>
+        function toggleText() {
+  
+  // Get all the elements from the page
+  var points = 
+      document.getElementById("points");
+
+  var showMoreText =
+      document.getElementById("moreText");
+
+  var buttonText =
+      document.getElementById("textButton");
+  if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      buttonText.innerHTML = "Show More";
+  }
+  else {
+
+      showMoreText.style.display = "inline";
+      points.style.display = "none";
+      buttonText.innerHTML = "Show Less";
+  }
+}
+</script>
+</body>
+</html>

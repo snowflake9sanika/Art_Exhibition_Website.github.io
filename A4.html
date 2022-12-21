@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+            <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+        </div> 
+            <div class="read">
+                <h1>~Amrita Shergil~</h1>
+            <p>
+                Amrita Sher-Gil (30 January 1913 – 5 December 1941) was a Hungarian-Indian painter.
+                 She has been called "one of the greatest avant-garde women artists of the early
+                  20th century" and a pioneer in modern Indian art. Drawn to painting from an early 
+                  age, Sher-Gil started formal lessons at the age of eight. She first gained recognition 
+                  at the age of 19, for her oil painting Young Girls (1932). 
+                Sher-Gil depicted everyday life of the people in her paintings.
+                <span id="points">...</span>
+                <span id="moreText"> Sher-Gil traveled throughout her life to various countries including Turkey, France,
+                     and India, deriving heavily from precolonial Indian art styles as well as contemporary culture. Sher-Gil
+                      is considered an important painter of 20th-century India, whose legacy stands on a level with that of the
+                       pioneers from the Bengal Renaissance. She was also an avid reader and a pianist. Sher-Gil's
+                     paintings are among the most expensive by Indian women painters today, although few acknowledged her work when she was alive.
+                </span>
+            </p>
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div>
+            <div class="volcano">
+                <img class="imgs" src="amrita-shergil.jpg"></img>
+        </div>
+                </div>
+        </div>
+        <script>
+        function toggleText() {
+  
+  // Get all the elements from the page
+  var points = 
+      document.getElementById("points");
+
+  var showMoreText =
+      document.getElementById("moreText");
+
+  var buttonText =
+      document.getElementById("textButton");
+  if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      buttonText.innerHTML = "Show More";
+  }
+  else {
+
+      showMoreText.style.display = "inline";
+      points.style.display = "none";
+      buttonText.innerHTML = "Show Less";
+  }
+}
+</script>
+</body>
+</html>

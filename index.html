@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body onload="myMove()">
+    <div class="main">
+        <div id ="animate"><img src="pirate-ship.png"></div>
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+                </script>
+                <div class="gcse-search"></div>
+            </div>
+        </div> 
+        <div class="content">
+           <br> <h1 style="text-align:center;">ART <span>Creates Your</span> Destiny</h1><br>
+            <p class="par" style="text-align:center;">Art is a general term that defines the ability for an individual to creatively express their
+                <br>imagination in a visual form such as a painting or sculpture. The art industry is largely  
+                <br>dictated by consumer's ability to relate to artist and their work</p>
+
+                <button class="cn"><a href="login.html">JOIN US</a></button>
+                    </div>
+                </div>
+        </div> 
+    </div> 
+    <script>
+        function myMove() {
+          let id = null;
+          const elem = document.getElementById("animate");   
+          let pos = 1;
+          clearInterval(id);
+          id = setInterval(frame, 1);
+          function frame() {
+            if (pos == 1280) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              
+              elem.style.left = pos + "px"; 
+            }
+          }
+        }
+        </script>
+        <script src="https://kit.fontawesome.com/b4f7ca0fd3.js" crossorigin="anonymous"></script>
+</body>
+</html>

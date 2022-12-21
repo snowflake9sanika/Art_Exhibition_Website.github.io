@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+            <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+        </div> 
+            <div class="read">
+                <h1>~Raja Ravi Varma~</h1>
+            <p>
+                He was an Indian painter and artist. He is considered among the greatest painters in the history of Indian art.
+                His works are one of the best examples of the fusion of European academic art with a purely Indian sensibility 
+                and iconography. Specially, he was notable for making affordable lithographs of his paintings available to the public,
+                 which greatly enhanced his reach and influence as a painter and public figure.His lithographs increased the 
+                involvement of common people with fine arts and defined artistic tastes among common people. Furthermore, his
+                 religious depictions of Hindu deities and works from Indian epic poetry and Puranas have received profound acclaim.
+                 He was part of the royal family of erstwhile Parappanad, Malappuram district.
+                <span id="points">...</span>
+                <span id="moreText"> Raja Ravi Varma was closely related to the royal family of Travancore of present-day Kerala
+                    state in India.Later in his life, two of his granddaughters were adopted into the royal family, and their
+                     descendants comprise the present royal family of Travancore, including the latest three Maharajas 
+                   (Balarama Varma III, Marthanda Varma III and Rama Varma VII).
+                </span>
+            </p>
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div>
+            <div class="volcano">
+                <img class="imgs" src="raja-ravi-varma.webp"></img>
+        </div>
+                </div>
+        </div>
+        <script>
+        function toggleText() {
+  
+  // Get all the elements from the page
+  var points = 
+      document.getElementById("points");
+
+  var showMoreText =
+      document.getElementById("moreText");
+
+  var buttonText =
+      document.getElementById("textButton");
+  if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      buttonText.innerHTML = "Show More";
+  }
+  else {
+
+      showMoreText.style.display = "inline";
+      points.style.display = "none";
+      buttonText.innerHTML = "Show Less";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+            <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+        </div> 
+            <div class="read">
+                <h1>~Meera Mukherjee~</h1>
+            <p>Indian sculptor. Trained in a pictorial style of the Bengal School, a
+                 movement favouring a return to Indian traditions in reaction to Western 
+                 Academic trends, Meera Mukherjee also studied sculpture with traditional craftsmen.
+                  In 1941 she enrolled in the Delhi Polytechnic College where she received her diploma 
+                  in painting, graphic design and sculpture in 1951. A scholarship to the Academy of Fine Arts 
+                  in Munich, led to her moving to Germany from 1953 to 1956. Here she became aware of the shortcomings of her artistic education, 
+                and the distance from her home pushed her to questioning her identity. 
+                <span id="points">...</span>
+                <span id="moreText">Thus her stylistic and personal “search for Indianness” began. She quickly
+                     dedicated herself to sculpture without completely abandoning painting and drawing. In 1956
+                      she returned to Calcutta, but encouraged by an anthropologist friend, she left for Bastar 
+                      in Madhya Pradesh to study the techniques particular to the Gharuan people, who use a traditional 
+                      and primitive lost wax process. She was supported for several subsequent trips. Her great tour of India 
+                      allowed her to work with other traditional craftsman, multiplying her sources of inspiration.
+                       The sum of her research and discoveries was published in 
+                    1978 under the auspices of the Anthropological Survey of India in Metalcraftsmen of India.
+                </span>
+            </p>
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div>
+            <div class="volcano">
+                <img class="imgs" src="meera-mukherji.jpg"></img>
+        </div>
+                </div>
+        </div>
+        <script>
+        function toggleText() {
+  
+  // Get all the elements from the page
+  var points = 
+      document.getElementById("points");
+
+  var showMoreText =
+      document.getElementById("moreText");
+
+  var buttonText =
+      document.getElementById("textButton");
+  if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      buttonText.innerHTML = "Show More";
+  }
+  else {
+
+      showMoreText.style.display = "inline";
+      points.style.display = "none";
+      buttonText.innerHTML = "Show Less";
+  }
+}
+</script>
+</body>
+</html>

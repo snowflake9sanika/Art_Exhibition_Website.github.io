@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnowFlakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SnowFlakes</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTIST</a></li>
+                    <li><a href="arts.html">ARTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+            <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+        </div> 
+            <div class="read">
+                <h1>~Jamini Roy~</h1>
+            <p>
+                Jamini Roy was an Indian painter best known for combining traditional 
+                Indian and Western art styles to create unique and complex works. Born
+                 on April 11, 1887 in Beliatore, India, he went on to study under Abanindranath
+                  Tagore at the Government College of Art in Kolkata at age 16. While there, 
+                  he learned academic drawing and painting in the Western tradition. After 
+                  graduating, Roy adopted the simple forms, flat colors, and humble paints 
+                  of Bengali folk artists. The artist garnered impressive success throughout
+                   his career, ultimately receiving the Padma Bhushan award from the Government of India in 1954, 
+                which is the third highest honor that can bestowed upon a civilian.
+                <span id="points">...</span>
+                <span id="moreText"> Today, Roy’s works can be found in the collections of the
+                     Victoria and Albert Museum in London, the Harn Museum of Art at the
+                      University of Florida, and the National Gallery of Modern Art in 
+                    New Delhi, among others. Roy died on April 24, 1972 in Kolkata, India.
+                </span>
+            </p>
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
+            </div>
+            <div class="volcano">
+                <img class="imgs" src="jamini-roy.jpg"></img>
+        </div>
+                </div>
+        </div>
+        <script>
+        function toggleText() {
+  
+  // Get all the elements from the page
+  var points = 
+      document.getElementById("points");
+
+  var showMoreText =
+      document.getElementById("moreText");
+
+  var buttonText =
+      document.getElementById("textButton");
+  if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      buttonText.innerHTML = "Show More";
+  }
+  else {
+
+      showMoreText.style.display = "inline";
+      points.style.display = "none";
+      buttonText.innerHTML = "Show Less";
+  }
+}
+</script>
+</body>
+</html>

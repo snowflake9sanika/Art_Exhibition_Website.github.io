@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>SnowFlakes</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            
+            <div class="main">
+                <div class="navbar">
+                    <div class="icon">
+                        <h2 class="logo">SnowFlakes</h2>
+                    </div>
+        
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.htmlS">HOME</a></li>
+                            <li><a href="artists.html">ARTIST</a></li>
+                            <li><a href="arts.html">ARTS</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                    <script async src="https://cse.google.com/cse.js?cx=0716fe2d57dd04dab">
+                    </script>
+                    <div class="gcse-search"></div>
+                </div>
+                </div> 
+                    <div class="read">
+                        <h1>~Nandalal Bose~</h1>
+                    <p>
+                        Nandalal Bose (3 December 1882 – 16 April 1966) was 
+                        one of the pioneers of modern Indian art and a key 
+                        figure of Contextual Modernism. A pupil of Abanindranath
+                         Tagore, Bose was known for his "Indian style" of painting. 
+                         He became the principal of Kala Bhavan, Santiniketan in 1921.
+                          He was influenced by the Tagore family and the murals of Ajanta,
+                           his classic works include paintings of scenes
+                         from Indian mythologies, women, and village life.
+                        <span id="points">...</span>
+                        <span id="moreText"> Today, many critics consider his paintings
+                             among India's most important modern paintings. In 1976, the
+                              Archaeological Survey of India, Department of Culture, Govt. 
+                              of India declared his works among the "nine artists" whose work, 
+                              "not being antiquities", were to be henceforth considered "to be 
+                              art treasures, having regard to their artistic and aesthetic value". 
+                            He was given the work of illustrating the constitution of India.
+                        </span>
+                    </p>
+                    <button onclick="toggleText()" id="textButton">
+                        Show More
+                    </button>
+                    </div>
+                    <div class="volcano">
+                        <img class="imgs" src="nandal-bose.jpg"></img>
+                </div>
+                        </div>
+                </div>
+                <script>
+                function toggleText() {
+          
+          // Get all the elements from the page
+          var points = 
+              document.getElementById("points");
+        
+          var showMoreText =
+              document.getElementById("moreText");
+        
+          var buttonText =
+              document.getElementById("textButton");
+          if (points.style.display === "none") {
+              showMoreText.style.display = "none";
+              points.style.display = "inline";
+              buttonText.innerHTML = "Show More";
+          }
+          else {
+        
+              showMoreText.style.display = "inline";
+              points.style.display = "none";
+              buttonText.innerHTML = "Show Less";
+          }
+        }
+        </script>
+        </body>
+        </html>
